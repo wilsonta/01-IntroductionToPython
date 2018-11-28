@@ -10,7 +10,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 ########################################################################
 
 ########################################################################
-# TODO: 2.
+# DONE: 2.
 #   You should have RUN the  m5e_loopy_turtles  module and READ its code.
 #   (Do so now if you have not already done so.)
 #
@@ -47,16 +47,20 @@ for k in range(6):
     redturtle.pen_down()
     size = size - 30
 
-greenturtle=rg.SimpleTurtle('turtle')
-greenturtle=rg.Pen('green',3)
+greenturtle = rg.SimpleTurtle('turtle')
+greenturtle.pen = rg.Pen('green',3)
 greenturtle.speed=20
 
 size=200
 
 for k in range(20):
 
-    greenturtle.left(45)
-    greenturtle.forward(20)
+    greenturtle.left(60)
+    greenturtle.forward(200)
+    greenturtle.left(60)
+    greenturtle.forward(200)
+    greenturtle.left(60)
+    greenturtle.forward(200)
 
 
     greenturtle.pen_up()
